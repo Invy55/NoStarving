@@ -1,0 +1,6 @@
+---
+name: NoStarving
+version: 0.0.1
+main: Invy55\NoStarving\Main
+api: 3.11.3
+...
