@@ -33,9 +33,11 @@ class Main extends PluginBase implements Listener{
                 $this->saveStarvingLevel();
                 $entity->setFood(20);
                 $entity->addSaturation(1);
-            }else{
+            }elseif(isset($this->data['starving'][$entity->getLowerCaseName()])){
                 $entity->setFood($this->data['starving'][$entity->getLowerCaseName()][0]);
                 $entity->addSaturation($this->data['starving'][$entity->getLowerCaseName()][1]); 
+            }else{
+                $this->data['starving'][$entity->getLowerCaseName()] = [20, 20];
             }
         }
     }
