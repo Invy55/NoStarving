@@ -1,0 +1,10 @@
+#-------------------------------------#
+# Worlds where you starving is disabled
+# Set to true to allow all the worlds
+enabled-worlds:
+  - world
+#-------------------------------------#
+# Full the hunger bar when teleported
+# to an enabled world
+change-world: true
+#-------------------------------------#
