@@ -17,7 +17,7 @@ Config is located in the plugin data folder in your pocketmine server folder, wi
 > ```
 
 ### You can edit 2 lines:
- - First is the **enabled worlds list**, in which starving will be disabled. You can add as may as you want.
+ - First is the **enabled worlds list**, in which starving will be disabled. You can add as many as you want.
  - Second the **change-world option**, is setted as default on true. It will always fill the food bar when the player teleport to an **enabled world** and then set it back when he teleport back or to another _not enabled_ world.
 
 
