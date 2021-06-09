@@ -13,10 +13,9 @@ use pocketmine\Player;
 
 class Main extends PluginBase implements Listener{
     public function onEnable(){
-        $this->saveResource("config.yml");
+        $this->saveConfig();
         $this->saveResource("data.yml");
-        $this->dataS = new Config($this->getDataFolder() . "data.yml", Config::YAML);
-        $this->data = $this->dataS->getAll();
+        $this->data = (array)$this->getConfig()->getAll();
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
     public function isStarving(PlayerExhaustEvent $event){
