@@ -21,5 +21,5 @@ Config is located in the plugin data folder in your pocketmine server folder, wi
  - Second the **change-world option**, is set as default on true. It will always fill the food bar when the player teleport to an **enabled world** and then set it back when he teleport back or to another _not enabled_ world.
 
 
-## For curiose people
+## For curious people
 data.yml is a simple YAML file used to save food and saturation level when entering an enabled world, that will be read then when exiting that world to _"reset"_ that values.
